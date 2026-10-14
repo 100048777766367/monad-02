@@ -1,23 +1,23 @@
 {
     "contract": "bodhi.monad.v1",
     "node_dna": {
-        "identity": "100048777766367/monad-01",
+        "identity": "100048777766367/monad-02",
         "generation": "M1_SWARM",
-        "node_index": 1,
+        "node_index": 2,
         "pulse_age": 1,
         "ancestor_root": "100048777766367/monad",
-        "generation_epoch": 2
+        "generation_epoch": 3
     },
-    "generation_epoch": 2,
-    "timestamp": 1792004834,
-    "decision": 0.714149054681605,
+    "generation_epoch": 3,
+    "timestamp": 1792005099,
+    "decision": 0.7181841330929768,
     "command_pulse": [
-        0.7141,
-        0.2859
+        0.7182,
+        0.2818
     ],
     "features": [
-        0.7141,
-        0.2859
+        0.7182,
+        0.2818
     ],
     "gossip_network": [
         "100048777766367/retina",
@@ -26,5 +26,5 @@
         "100048777766367/olfactory",
         "100048777766367/seed"
     ],
-    "quantum_cid": "1d19dcb8eefe4eebc414208608be48c2ba5e1b85b11c999b4108df1cfd7ea3ab4df18cfeb76e1a6ab0b00f1637615c5b9272710d09ee08e4f3d2b879a0fa4e2a"
+    "quantum_cid": "68322c3441cb4d19341dd78d90adba67198ae44286827f42e54a4b60832e61fc047cd558f544007dc29656e33dfbdd14b326b5ce2c51e3bb87b71093b5b3e0ba"
 }
