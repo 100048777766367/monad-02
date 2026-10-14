@@ -1,17 +1,17 @@
-name: Monad Lineage Invariant Lifecycle
+name: Monad-02 Prodigy Invariant Lifecycle
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '30 */4 * * *'
 
 permissions:
   contents: write
 
 jobs:
-  run-monad-lineage:
+  run-monad02-prodigy:
     runs-on: ubuntu-latest
     steps:
       - name: Kéo mã nguồn bằng Linux Shell gốc (Thoát ly Node.js)
@@ -23,18 +23,18 @@ jobs:
         with:
           python-version: '3.10'
 
-      # VẬN HÀNH ĐƠN TỬ PHẢ HỆ VƯỢT TỔ (M0 / M1 / M2)
-      - name: Vận hành Hạt Nhân Monad Phả Hệ
+      # VẬN HÀNH ĐỘNG CƠ MONAD-02 VƯỢT TỔ (TAM GIÁC ĐỒNG THUẬN 2/3)
+      - name: Vận hành Hạt Nhân Monad-02
         env:
           REPO_OWNER: ${{ github.repository_owner }}
           REPO_PARENT: ${{ github.event.repository.parent.owner.login }}
         run: python engine.py
 
-      # LƯU VẾT TÍCH BẰNG FAST-FORWARD (CÓ TOKEN BẢO MẬT CHỐNG LỖI 128)
-      - name: Lưu vết tích tiến hóa đơn tử
+      # LƯU TRẠNG THÁI VÀO GIT (CÓ TOKEN BẢO MẬT CHỐNG LỖI 128 & FAST-FORWARD)
+      - name: Lưu vết tích đồng thuận tam giác
         run: |
-          git config --global user.name "Monad-Lineage-Bot"
-          git config --global user.email "monad@lineage.node"
+          git config --global user.name "Monad-02-Prodigy-Bot"
+          git config --global user.email "prodigy@monad02.node"
           
           # CẤP TOKEN ĐỂ ĐƯỢC PHÉP PUSH (MIỄN NHIỄM LỖI 128)
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
@@ -44,7 +44,7 @@ jobs:
           git add synapses/ synapse_backward.json synapse_forward.json 2>/dev/null || true
           
           if ! git diff --staged --quiet; then
-            git commit -m "💎 [Monad Phả Hệ] Tiến hóa đơn tử thế hệ #(1+N) [skip ci]"
+            git commit -m "💎 [Monad-02 Vượt Tổ] Đồng thuận tam giác & Khắc cốt tri thức #(1+N) [skip ci]"
             git push origin main
           else
             echo "Môi trường tĩnh, không có biến đổi mới."
