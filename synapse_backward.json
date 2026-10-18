@@ -6,13 +6,13 @@
         "node_index": 2,
         "pulse_age": 1,
         "ancestor_root": "100048777766367/monad",
-        "generation_epoch": 25
+        "generation_epoch": 26
     },
-    "generation_epoch": 25,
-    "timestamp": 1792327456,
+    "generation_epoch": 26,
+    "timestamp": 1792349273,
     "gradients_for_eye": [
-        0.007,
-        -0.0063
+        0.0068,
+        -0.0061
     ],
     "super_xor_masks": {
         "100048777766367/retina": [
@@ -53,5 +53,5 @@
         "100048777766367/olfactory",
         "100048777766367/seed"
     ],
-    "quantum_cid": "f7a11f49f1e1645bdd2c1ee05e06119ff6d764100ca5e133efaa95545667eeb33f5ab32a852af880d3173d35c03a86c3bdacbd422ad74028cb4e90d86f9ca6ea"
+    "quantum_cid": "4e10ecd5fd5ae392feacd83077268da31f31e13641dc8dc29406c63785bfde4285a31a48ecce4ce5e03aec50ebfff7672e1a1e75b5961c093b767e6bfad4e115"
 }
