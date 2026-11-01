@@ -5,10 +5,10 @@
         "node_index": 2,
         "pulse_age": 1,
         "ancestor_root": "100048777766367/monad",
-        "generation_epoch": 74
+        "generation_epoch": 75
     },
-    "timestamp": 1793489591,
-    "consensus": 0.852,
+    "timestamp": 1793515047,
+    "consensus": 0.8528,
     "peers": [
         "100048777766367/retina",
         "100048777766367/cochlea",
